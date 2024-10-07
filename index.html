@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>Calculadora da Laís</h1>
+        <div id="container">
+            <div id="calculadora">
+                <div id="visor">0</div>
+                <div id="buttonGrid">
+                
+                <button class="button-ligar" onclick="calculadora.ligarCalculadora()">ON</button>
+                <button class="button-desligar" onclick="calculadora.desligarCalculadora()">OFF</button>
+                <button class="button button-limpar">C</button>
+                <button class="button operadores" value="/">÷</button>
+                       
+                <button class="button numeros" value="7">7</button>
+                <button class="button numeros" value="8">8</button>
+                <button class="button numeros" value="9">9</button>  
+                <button class="button operadores" value="*">x</button>  
+                
+                <button class="button numeros" value="4">4</button>
+                <button class="button numeros" value="5">5</button>
+                <button class="button numeros" value="6">6</button>
+                <button class="button operadores" value="-">-</button>
+               
+                <button class="button numeros" value="1">1</button>
+                <button class="button numeros" value="2">2</button>
+                <button class="button numeros" value="3">3</button>
+                <button class="button operadores" value="+">+</button>
+                
+                <button class="button numeros" value="0">0</button>
+                <button class="button numeros" value=".">,</button>
+                <button class="button" onclick="calculadora.apagaUltimoDigito()">DEL</button>
+                <button class="button-result" onclick="calculadora.exibeResultado()">=</button>
+                            
+            </div>
+        </div>
+        <div id="historico">
+            <h2>Operações Realizadas</h2>
+            <ul id="historicoList">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
